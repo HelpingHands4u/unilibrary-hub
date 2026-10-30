@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function own(id) { return signedIn() && request.auth.uid == id; }
+    function role() { return exists(/databases/$(database)/documents/user_roles/$(request.auth.uid)) ? get(/databases/$(database)/documents/user_roles/$(request.auth.uid)).data.role : 'student'; }
+    function staff() { return signedIn() && role() in ['admin', 'librarian']; }
+    function admin() { return signedIn() && role() == 'admin'; }
+    match /users/{id} {
+      allow read: if own(id) || staff();
+      allow create: if own(id)
+        && request.resource.data.keys().hasOnly(['id','name','email','rollNumber','department','maxBorrowLimit','active'])
+        && request.resource.data.id == id
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.name is string && request.resource.data.name.size() >= 2 && request.resource.data.name.size() <= 100
+        && request.resource.data.rollNumber is string && request.resource.data.rollNumber.matches('^[A-Za-z0-9]{4,15}$')
+        && request.resource.data.department is string && request.resource.data.department.size() >= 2 && request.resource.data.department.size() <= 60
+        && request.resource.data.maxBorrowLimit == 4 && request.resource.data.active == true;
+    }
+    match /user_roles/{id} { allow read: if own(id) || staff(); }
+    match /books/{id} { allow read: if true; }
+    match /book_copies/{id} { allow read: if true; }
+    match /settings/{id} { allow read: if id == 'library'; }
+    match /reviews/{id} { allow read: if true; }
+    match /resources/{id} { allow read: if resource.data.approved == true || admin() || (signedIn() && resource.data.submittedBy == request.auth.uid); }
+    match /loans/{id} { allow read: if staff() || (signedIn() && resource.data.userId == request.auth.uid); }
+    match /reservations/{id} { allow read: if staff() || (signedIn() && resource.data.userId == request.auth.uid); }
+    match /fines/{id} { allow read: if staff() || (signedIn() && resource.data.userId == request.auth.uid); }
+    match /wishlists/{id} { allow read: if staff() || (signedIn() && resource.data.userId == request.auth.uid); }
+    match /notifications/{id} { allow read: if staff() || (signedIn() && resource.data.userId == request.auth.uid); }
+    match /recent/{id} { allow read: if staff() || (signedIn() && resource.data.userId == request.auth.uid); }
+    match /audit/{id} { allow read: if staff(); }
+    // All library mutations and role writes are verified by FastAPI using Admin credentials.
+    match /{document=**} { allow read, write: if false; }
+  }
+}
