@@ -1,26 +1,26 @@
 import { useSyncExternalStore } from "react";
 import type { LibraryState, Loan, Role, User } from "./types";
-import { firebaseConfigured } from "@/lib/firebase";
-import { connectFirestore, libraryCommand } from "./remote";
+import { connectFirestore, libraryCommand, NotConfiguredError } from "./remote";
+import { isLive, forceLocalMode, probeLibraryMode } from "./mode";
 import { buildSeed } from "./seed";
 import { addDays, calculateFine, canRenew, checkIssueEligibility, daysOverdue } from "./rules";
 
 const KEY = "unilibrary.v1";
 const SESSION = "unilibrary.session";
 
-const initialState = () => {
-  const seed = buildSeed(new Date("2026-10-27T00:00:00Z"));
-  if (!firebaseConfigured) return seed;
-  return { ...seed, books: [], copies: [], users: [], loans: [], reservations: [], fines: [], wishlists: [], notifications: [], reviews: [], resources: [], audit: [], recent: [] };
-};
+// First paint (and SSR) always renders the seeded catalog; live mode replaces
+// it with Firestore data once /api/commands confirms the service is usable.
+const initialState = () => buildSeed(new Date("2026-10-27T00:00:00Z"));
+const emptyLiveState = (s: LibraryState): LibraryState => ({ ...s, books: [], copies: [], users: [], loans: [], reservations: [], fines: [], wishlists: [], notifications: [], reviews: [], resources: [], audit: [], recent: [] });
 let state: LibraryState = initialState();
 let externalUser: User | null = null;
 let sessionId: string | null = null;
 const listeners = new Set<() => void>();
+
 let hydrated = false;
 
 function emit() {
-  if (!firebaseConfigured && typeof window !== "undefined") {
+  if (!isLive() && typeof window !== "undefined") {
     localStorage.setItem(KEY, JSON.stringify(state));
     if (sessionId) localStorage.setItem(SESSION, sessionId);
     else localStorage.removeItem(SESSION);
@@ -31,23 +31,36 @@ function emit() {
 export function hydrateStore() {
   if (hydrated || typeof window === "undefined") return;
   hydrated = true;
-  if (firebaseConfigured) {
-    void connectFirestore((key, rows) => {
-      if (key === "resources" && rows && typeof rows === "object" && "ownerRows" in rows) {
-        const own = (rows as { ownerRows: LibraryState["resources"] }).ownerRows;
-        state = { ...state, resources: [...state.resources.filter(r => !own.some(o => o.id === r.id)), ...own] };
-      } else state = { ...state, [key]: rows };
-      if (key === "users" && externalUser) externalUser = { ...externalUser, ...state.users.find(u => u.id === externalUser?.id), role: externalUser.role };
-      emit();
-    }, user => { externalUser = user; sessionId = user?.id ?? null; emit(); }, message => { void import("sonner").then(({ toast }) => toast.error(message)); });
-    return;
-  }
+  void probeLibraryMode().then(() => {
+    if (isLive()) {
+      state = emptyLiveState(state);
+      connectFirestore((key, rows) => {
+        if (key === "resources" && rows && typeof rows === "object" && "ownerRows" in rows) {
+          const own = (rows as { ownerRows: LibraryState["resources"] }).ownerRows;
+          state = { ...state, resources: [...state.resources.filter(r => !own.some(o => o.id === r.id)), ...own] };
+        } else state = { ...state, [key]: rows };
+        if (key === "users" && externalUser) externalUser = { ...externalUser, ...state.users.find(u => u.id === externalUser?.id), role: externalUser.role };
+        emit();
+      }, user => { externalUser = user; sessionId = user?.id ?? null; emit(); }, message => { void import("sonner").then(({ toast }) => toast.error(message)); });
+      return;
+    }
+    restoreLocalDataset();
+  });
+}
+
+/** Local demonstration data: saved browser state when present, otherwise the seed catalog. */
+function restoreLocalDataset() {
   try {
     const raw = localStorage.getItem(KEY);
     if (raw) state = JSON.parse(raw);
     sessionId = localStorage.getItem(SESSION);
   } catch {
     /* corrupt storage: keep seed */
+  }
+  // Preserve the signed-in identity from a degraded live session so actions keep working.
+  if (externalUser) {
+    if (!state.users.some((u) => u.id === externalUser!.id)) state = { ...state, users: [...state.users, externalUser!] };
+    sessionId = externalUser.id;
   }
   listeners.forEach((l) => l());
 }
@@ -60,7 +73,7 @@ function subscribe(l: () => void) {
 type Snap = { state: LibraryState; user: User | null };
 let snap: Snap = { state, user: null };
 function getSnap(): Snap {
-  const user = firebaseConfigured ? externalUser : sessionId ? state.users.find((u) => u.id === sessionId) ?? null : null;
+  const user = isLive() ? externalUser : sessionId ? state.users.find((u) => u.id === sessionId) ?? null : null;
   if (snap.state !== state || snap.user !== user) snap = { state, user };
   return snap;
 }
@@ -108,7 +121,7 @@ const demoActions = {
       state = { ...state, users: [...state.users, { id, email, name, role: roleFromServer, maxBorrowLimit: 4, active: true }] };
     }
     externalUser = { id, email, name, role: roleFromServer, maxBorrowLimit: 4, active: true };
-    sessionId = firebaseConfigured ? id : existing?.id ?? id;
+    sessionId = isLive() ? id : existing?.id ?? id;
     emit();
   },
   register(name: string, email: string, rollNumber: string, department: string) {
@@ -121,7 +134,7 @@ const demoActions = {
   signOut() {
     sessionId = null;
     externalUser = null;
-    if (firebaseConfigured) void import("firebase/auth").then(async ({ getAuth, signOut }) => { const { getFirebaseApp } = await import("@/lib/firebase"); const app = getFirebaseApp(); if (app) await signOut(getAuth(app)); });
+    if (isLive()) void import("firebase/auth").then(async ({ getAuth, signOut }) => { const { getFirebaseApp } = await import("@/lib/firebase"); const app = getFirebaseApp(); if (app) await signOut(getAuth(app)); });
     emit();
   },
   resetDemo() {
@@ -316,8 +329,22 @@ const localOnly = new Set(["signInDemo", "signInExternal", "signOut", "register"
 export const actions = new Proxy(demoActions, { get(target, key: keyof typeof demoActions) {
   const fn = target[key];
   if (localOnly.has(key)) return (...args: unknown[]) => {
-    if (firebaseConfigured && ["signInDemo", "register", "resetDemo"].includes(key)) throw new Error("Demo actions are unavailable for live accounts");
+    if (isLive() && ["signInDemo", "register", "resetDemo"].includes(key)) throw new Error("Demo actions are unavailable for live accounts");
     return Reflect.apply(fn, target, args);
   };
-  return (...args: unknown[]) => firebaseConfigured ? libraryCommand(key, args) : Reflect.apply(fn, target, args);
+  return async (...args: unknown[]) => {
+    if (isLive()) {
+      try {
+        return await libraryCommand(key, args);
+      } catch (error) {
+        // The live service became unavailable: degrade to local mode and run the
+        // same action there instead of surfacing a 503 to the member.
+        if (error instanceof NotConfiguredError) {
+          forceLocalMode();
+          restoreLocalDataset();
+        } else throw error;
+      }
+    }
+    return Reflect.apply(fn, target, args);
+  };
 } });
