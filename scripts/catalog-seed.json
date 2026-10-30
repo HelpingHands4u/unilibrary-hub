@@ -1,0 +1,1999 @@
+{
+  "books": [
+    {
+      "id": "b1",
+      "title": "Clean Code",
+      "authors": [
+        "Robert C. Martin"
+      ],
+      "category": "Computer Science",
+      "subjects": [
+        "Computer Science",
+        "Reference"
+      ],
+      "publisher": "Prentice Hall",
+      "edition": "1st Edition",
+      "year": 2008,
+      "isbn13": "9780000007919",
+      "isbn10": "0000007919",
+      "language": "Hindi",
+      "format": "physical",
+      "rating": 4.7,
+      "reviewCount": 20,
+      "description": "Clean Code by Robert C. Martin is a widely used computer science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-1",
+      "shelf": "Floor 1, Shelf A-10",
+      "borrowCount": 15,
+      "addedAt": "2026-10-30T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b2",
+      "title": "Introduction to Algorithms",
+      "authors": [
+        "Thomas H. Cormen"
+      ],
+      "category": "Computer Science",
+      "subjects": [
+        "Computer Science",
+        "Undergraduate"
+      ],
+      "publisher": "MIT Press",
+      "edition": "2nd Edition",
+      "year": 2022,
+      "isbn13": "9780000015838",
+      "isbn10": "0000015838",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.8,
+      "reviewCount": 57,
+      "description": "Introduction to Algorithms by Thomas H. Cormen is a widely used computer science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-2",
+      "shelf": "Floor 2, Shelf B-11",
+      "borrowCount": 68,
+      "addedAt": "2026-10-19T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b3",
+      "title": "Operating System Concepts",
+      "authors": [
+        "Abraham Silberschatz"
+      ],
+      "category": "Computer Science",
+      "subjects": [
+        "Computer Science",
+        "Reference"
+      ],
+      "publisher": "Wiley",
+      "edition": "3rd Edition",
+      "year": 2018,
+      "isbn13": "9780000023757",
+      "isbn10": "0000023757",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.5,
+      "reviewCount": 94,
+      "description": "Operating System Concepts by Abraham Silberschatz is a widely used computer science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-3",
+      "shelf": "Floor 3, Shelf C-12",
+      "borrowCount": 121,
+      "addedAt": "2026-10-08T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b4",
+      "title": "Database System Concepts",
+      "authors": [
+        "Henry F. Korth"
+      ],
+      "category": "Computer Science",
+      "subjects": [
+        "Computer Science",
+        "Undergraduate"
+      ],
+      "publisher": "McGraw Hill",
+      "edition": "4th Edition",
+      "year": 2019,
+      "isbn13": "9780000031676",
+      "isbn10": "0000031676",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.4,
+      "reviewCount": 131,
+      "description": "Database System Concepts by Henry F. Korth is a widely used computer science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-4",
+      "shelf": "Floor 1, Shelf D-13",
+      "borrowCount": 34,
+      "addedAt": "2026-09-27T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b5",
+      "title": "Computer Networks",
+      "authors": [
+        "Andrew S. Tanenbaum"
+      ],
+      "category": "Computer Science",
+      "subjects": [
+        "Computer Science",
+        "Reference"
+      ],
+      "publisher": "Pearson",
+      "edition": "1st Edition",
+      "year": 2021,
+      "isbn13": "9780000039595",
+      "isbn10": "0000039595",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.6,
+      "reviewCount": 168,
+      "description": "Computer Networks by Andrew S. Tanenbaum is a widely used computer science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-5",
+      "shelf": "Floor 2, Shelf E-14",
+      "borrowCount": 87,
+      "addedAt": "2026-09-16T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b6",
+      "title": "Python Programming",
+      "authors": [
+        "Guido van Rossum"
+      ],
+      "category": "Computer Science",
+      "subjects": [
+        "Computer Science",
+        "Undergraduate"
+      ],
+      "publisher": "O'Reilly",
+      "edition": "2nd Edition",
+      "year": 2023,
+      "isbn13": "9780000047514",
+      "isbn10": "0000047514",
+      "language": "English",
+      "format": "digital",
+      "rating": 4.5,
+      "reviewCount": 25,
+      "description": "Python Programming by Guido van Rossum is a widely used computer science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-6",
+      "shelf": "Floor 3, Shelf F-15",
+      "borrowCount": 140,
+      "addedAt": "2026-09-05T14:44:56.613Z",
+      "tags": [
+        "handbook"
+      ]
+    },
+    {
+      "id": "b7",
+      "title": "The Pragmatic Programmer",
+      "authors": [
+        "David Thomas"
+      ],
+      "category": "Computer Science",
+      "subjects": [
+        "Computer Science",
+        "Reference"
+      ],
+      "publisher": "Addison-Wesley",
+      "edition": "3rd Edition",
+      "year": 2019,
+      "isbn13": "9780000055433",
+      "isbn10": "0000055433",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.7,
+      "reviewCount": 62,
+      "description": "The Pragmatic Programmer by David Thomas is a widely used computer science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-1",
+      "shelf": "Floor 1, Shelf A-16",
+      "borrowCount": 53,
+      "addedAt": "2026-08-25T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b8",
+      "title": "Design Patterns",
+      "authors": [
+        "Erich Gamma"
+      ],
+      "category": "Computer Science",
+      "subjects": [
+        "Computer Science",
+        "Undergraduate"
+      ],
+      "publisher": "Addison-Wesley",
+      "edition": "4th Edition",
+      "year": 1994,
+      "isbn13": "9780000063352",
+      "isbn10": "0000063352",
+      "language": "English",
+      "format": "reference",
+      "rating": 4.5,
+      "reviewCount": 99,
+      "description": "Design Patterns by Erich Gamma is a widely used computer science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-2",
+      "shelf": "Floor 2, Shelf B-17",
+      "borrowCount": 106,
+      "addedAt": "2026-08-14T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b9",
+      "title": "Hacking: The Art of Exploitation",
+      "authors": [
+        "Jon Erickson"
+      ],
+      "category": "Cybersecurity",
+      "subjects": [
+        "Cybersecurity",
+        "Reference"
+      ],
+      "publisher": "No Starch Press",
+      "edition": "1st Edition",
+      "year": 2008,
+      "isbn13": "9780000071271",
+      "isbn10": "0000071271",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.4,
+      "reviewCount": 136,
+      "description": "Hacking: The Art of Exploitation by Jon Erickson is a widely used cybersecurity resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-3",
+      "shelf": "Floor 3, Shelf C-18",
+      "borrowCount": 19,
+      "addedAt": "2026-08-03T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b10",
+      "title": "Cryptography and Network Security",
+      "authors": [
+        "William Stallings"
+      ],
+      "category": "Cybersecurity",
+      "subjects": [
+        "Cybersecurity",
+        "Undergraduate"
+      ],
+      "publisher": "Pearson",
+      "edition": "2nd Edition",
+      "year": 2020,
+      "isbn13": "9780000079190",
+      "isbn10": "0000079190",
+      "language": "Hindi",
+      "format": "physical",
+      "rating": 4.3,
+      "reviewCount": 173,
+      "description": "Cryptography and Network Security by William Stallings is a widely used cybersecurity resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-4",
+      "shelf": "Floor 1, Shelf D-19",
+      "borrowCount": 72,
+      "addedAt": "2026-07-23T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b11",
+      "title": "The Web Application Hacker's Handbook",
+      "authors": [
+        "Dafydd Stuttard"
+      ],
+      "category": "Cybersecurity",
+      "subjects": [
+        "Cybersecurity",
+        "Reference"
+      ],
+      "publisher": "Wiley",
+      "edition": "3rd Edition",
+      "year": 2011,
+      "isbn13": "9780000087109",
+      "isbn10": "0000087109",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.5,
+      "reviewCount": 30,
+      "description": "The Web Application Hacker's Handbook by Dafydd Stuttard is a widely used cybersecurity resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-5",
+      "shelf": "Floor 2, Shelf E-20",
+      "borrowCount": 125,
+      "addedAt": "2026-07-12T14:44:56.613Z",
+      "tags": [
+        "handbook"
+      ]
+    },
+    {
+      "id": "b12",
+      "title": "Artificial Intelligence: A Modern Approach",
+      "authors": [
+        "Stuart Russell"
+      ],
+      "category": "Artificial Intelligence",
+      "subjects": [
+        "Artificial Intelligence",
+        "Undergraduate"
+      ],
+      "publisher": "Pearson",
+      "edition": "4th Edition",
+      "year": 2021,
+      "isbn13": "9780000095028",
+      "isbn10": "0000095028",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.8,
+      "reviewCount": 67,
+      "description": "Artificial Intelligence: A Modern Approach by Stuart Russell is a widely used artificial intelligence resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-6",
+      "shelf": "Floor 3, Shelf F-21",
+      "borrowCount": 38,
+      "addedAt": "2026-10-29T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b13",
+      "title": "Deep Learning",
+      "authors": [
+        "Ian Goodfellow"
+      ],
+      "category": "Artificial Intelligence",
+      "subjects": [
+        "Artificial Intelligence",
+        "Reference"
+      ],
+      "publisher": "MIT Press",
+      "edition": "1st Edition",
+      "year": 2016,
+      "isbn13": "9780000102947",
+      "isbn10": "0000102947",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.6,
+      "reviewCount": 104,
+      "description": "Deep Learning by Ian Goodfellow is a widely used artificial intelligence resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-1",
+      "shelf": "Floor 1, Shelf A-22",
+      "borrowCount": 91,
+      "addedAt": "2026-10-18T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b14",
+      "title": "Hands-On Machine Learning",
+      "authors": [
+        "Aurélien Géron"
+      ],
+      "category": "Artificial Intelligence",
+      "subjects": [
+        "Artificial Intelligence",
+        "Undergraduate"
+      ],
+      "publisher": "O'Reilly",
+      "edition": "2nd Edition",
+      "year": 2023,
+      "isbn13": "9780000110866",
+      "isbn10": "0000110866",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.8,
+      "reviewCount": 141,
+      "description": "Hands-On Machine Learning by Aurélien Géron is a widely used artificial intelligence resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-2",
+      "shelf": "Floor 2, Shelf B-23",
+      "borrowCount": 144,
+      "addedAt": "2026-10-07T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b15",
+      "title": "Pattern Recognition and Machine Learning",
+      "authors": [
+        "Christopher Bishop"
+      ],
+      "category": "Artificial Intelligence",
+      "subjects": [
+        "Artificial Intelligence",
+        "Reference"
+      ],
+      "publisher": "Springer",
+      "edition": "3rd Edition",
+      "year": 2006,
+      "isbn13": "9780000118785",
+      "isbn10": "0000118785",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.5,
+      "reviewCount": 178,
+      "description": "Pattern Recognition and Machine Learning by Christopher Bishop is a widely used artificial intelligence resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-3",
+      "shelf": "Floor 3, Shelf C-24",
+      "borrowCount": 57,
+      "addedAt": "2026-09-26T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b16",
+      "title": "Python for Data Analysis",
+      "authors": [
+        "Wes McKinney"
+      ],
+      "category": "Data Science",
+      "subjects": [
+        "Data Science",
+        "Undergraduate"
+      ],
+      "publisher": "O'Reilly",
+      "edition": "4th Edition",
+      "year": 2022,
+      "isbn13": "9780000126704",
+      "isbn10": "0000126704",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.6,
+      "reviewCount": 35,
+      "description": "Python for Data Analysis by Wes McKinney is a widely used data science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-4",
+      "shelf": "Floor 1, Shelf D-25",
+      "borrowCount": 110,
+      "addedAt": "2026-09-15T14:44:56.613Z",
+      "tags": [
+        "handbook"
+      ]
+    },
+    {
+      "id": "b17",
+      "title": "The Elements of Statistical Learning",
+      "authors": [
+        "Trevor Hastie"
+      ],
+      "category": "Data Science",
+      "subjects": [
+        "Data Science",
+        "Reference"
+      ],
+      "publisher": "Springer",
+      "edition": "1st Edition",
+      "year": 2017,
+      "isbn13": "9780000134623",
+      "isbn10": "0000134623",
+      "language": "English",
+      "format": "digital",
+      "rating": 4.7,
+      "reviewCount": 72,
+      "description": "The Elements of Statistical Learning by Trevor Hastie is a widely used data science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-5",
+      "shelf": "Floor 2, Shelf E-26",
+      "borrowCount": 23,
+      "addedAt": "2026-09-04T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b18",
+      "title": "Storytelling with Data",
+      "authors": [
+        "Cole Nussbaumer Knaflic"
+      ],
+      "category": "Data Science",
+      "subjects": [
+        "Data Science",
+        "Undergraduate"
+      ],
+      "publisher": "Wiley",
+      "edition": "2nd Edition",
+      "year": 2015,
+      "isbn13": "9780000142542",
+      "isbn10": "0000142542",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.4,
+      "reviewCount": 109,
+      "description": "Storytelling with Data by Cole Nussbaumer Knaflic is a widely used data science resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-6",
+      "shelf": "Floor 3, Shelf F-27",
+      "borrowCount": 76,
+      "addedAt": "2026-08-24T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b19",
+      "title": "Engineering Mechanics",
+      "authors": [
+        "R. C. Hibbeler"
+      ],
+      "category": "Engineering",
+      "subjects": [
+        "Engineering",
+        "Reference"
+      ],
+      "publisher": "Pearson",
+      "edition": "3rd Edition",
+      "year": 2016,
+      "isbn13": "9780000150461",
+      "isbn10": "0000150461",
+      "language": "Hindi",
+      "format": "physical",
+      "rating": 4.2,
+      "reviewCount": 146,
+      "description": "Engineering Mechanics by R. C. Hibbeler is a widely used engineering resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-1",
+      "shelf": "Floor 1, Shelf A-28",
+      "borrowCount": 129,
+      "addedAt": "2026-08-13T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b20",
+      "title": "Fundamentals of Thermodynamics",
+      "authors": [
+        "Claus Borgnakke"
+      ],
+      "category": "Engineering",
+      "subjects": [
+        "Engineering",
+        "Undergraduate"
+      ],
+      "publisher": "Wiley",
+      "edition": "4th Edition",
+      "year": 2019,
+      "isbn13": "9780000158380",
+      "isbn10": "0000158380",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.1,
+      "reviewCount": 183,
+      "description": "Fundamentals of Thermodynamics by Claus Borgnakke is a widely used engineering resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-2",
+      "shelf": "Floor 2, Shelf B-29",
+      "borrowCount": 42,
+      "addedAt": "2026-08-02T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b21",
+      "title": "Engineering Drawing",
+      "authors": [
+        "N. D. Bhatt"
+      ],
+      "category": "Engineering",
+      "subjects": [
+        "Engineering",
+        "Reference"
+      ],
+      "publisher": "Charotar",
+      "edition": "1st Edition",
+      "year": 2014,
+      "isbn13": "9780000166299",
+      "isbn10": "0000166299",
+      "language": "English",
+      "format": "reference",
+      "rating": 4.3,
+      "reviewCount": 40,
+      "description": "Engineering Drawing by N. D. Bhatt is a widely used engineering resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-3",
+      "shelf": "Floor 3, Shelf C-30",
+      "borrowCount": 95,
+      "addedAt": "2026-07-22T14:44:56.613Z",
+      "tags": [
+        "handbook"
+      ]
+    },
+    {
+      "id": "b22",
+      "title": "Discrete Mathematics and Its Applications",
+      "authors": [
+        "Kenneth Rosen"
+      ],
+      "category": "Mathematics",
+      "subjects": [
+        "Mathematics",
+        "Undergraduate"
+      ],
+      "publisher": "McGraw Hill",
+      "edition": "2nd Edition",
+      "year": 2018,
+      "isbn13": "9780000174218",
+      "isbn10": "0000174218",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.5,
+      "reviewCount": 77,
+      "description": "Discrete Mathematics and Its Applications by Kenneth Rosen is a widely used mathematics resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-4",
+      "shelf": "Floor 1, Shelf D-31",
+      "borrowCount": 148,
+      "addedAt": "2026-07-11T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b23",
+      "title": "Linear Algebra Done Right",
+      "authors": [
+        "Sheldon Axler"
+      ],
+      "category": "Mathematics",
+      "subjects": [
+        "Mathematics",
+        "Reference"
+      ],
+      "publisher": "Springer",
+      "edition": "3rd Edition",
+      "year": 2023,
+      "isbn13": "9780000182137",
+      "isbn10": "0000182137",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.7,
+      "reviewCount": 114,
+      "description": "Linear Algebra Done Right by Sheldon Axler is a widely used mathematics resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-5",
+      "shelf": "Floor 2, Shelf E-32",
+      "borrowCount": 61,
+      "addedAt": "2026-10-28T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b24",
+      "title": "Higher Engineering Mathematics",
+      "authors": [
+        "B. S. Grewal"
+      ],
+      "category": "Mathematics",
+      "subjects": [
+        "Mathematics",
+        "Undergraduate"
+      ],
+      "publisher": "Khanna",
+      "edition": "4th Edition",
+      "year": 2020,
+      "isbn13": "9780000190056",
+      "isbn10": "0000190056",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.4,
+      "reviewCount": 151,
+      "description": "Higher Engineering Mathematics by B. S. Grewal is a widely used mathematics resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-6",
+      "shelf": "Floor 3, Shelf F-33",
+      "borrowCount": 114,
+      "addedAt": "2026-10-17T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b25",
+      "title": "Concepts of Physics",
+      "authors": [
+        "H. C. Verma"
+      ],
+      "category": "Physics",
+      "subjects": [
+        "Physics",
+        "Reference"
+      ],
+      "publisher": "Bharati Bhawan",
+      "edition": "1st Edition",
+      "year": 2017,
+      "isbn13": "9780000197975",
+      "isbn10": "0000197975",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.8,
+      "reviewCount": 188,
+      "description": "Concepts of Physics by H. C. Verma is a widely used physics resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-1",
+      "shelf": "Floor 1, Shelf A-34",
+      "borrowCount": 27,
+      "addedAt": "2026-10-06T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b26",
+      "title": "The Feynman Lectures on Physics",
+      "authors": [
+        "Richard Feynman"
+      ],
+      "category": "Physics",
+      "subjects": [
+        "Physics",
+        "Undergraduate"
+      ],
+      "publisher": "Basic Books",
+      "edition": "2nd Edition",
+      "year": 2011,
+      "isbn13": "9780000205894",
+      "isbn10": "0000205894",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.9,
+      "reviewCount": 45,
+      "description": "The Feynman Lectures on Physics by Richard Feynman is a widely used physics resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-2",
+      "shelf": "Floor 2, Shelf B-35",
+      "borrowCount": 80,
+      "addedAt": "2026-09-25T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b27",
+      "title": "Microelectronic Circuits",
+      "authors": [
+        "Adel S. Sedra"
+      ],
+      "category": "Electronics",
+      "subjects": [
+        "Electronics",
+        "Reference"
+      ],
+      "publisher": "Oxford",
+      "edition": "3rd Edition",
+      "year": 2019,
+      "isbn13": "9780000213813",
+      "isbn10": "0000213813",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.4,
+      "reviewCount": 82,
+      "description": "Microelectronic Circuits by Adel S. Sedra is a widely used electronics resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-3",
+      "shelf": "Floor 3, Shelf C-36",
+      "borrowCount": 133,
+      "addedAt": "2026-09-14T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b28",
+      "title": "The Art of Electronics",
+      "authors": [
+        "Paul Horowitz"
+      ],
+      "category": "Electronics",
+      "subjects": [
+        "Electronics",
+        "Undergraduate"
+      ],
+      "publisher": "Cambridge",
+      "edition": "4th Edition",
+      "year": 2015,
+      "isbn13": "9780000221732",
+      "isbn10": "0000221732",
+      "language": "Hindi",
+      "format": "digital",
+      "rating": 4.8,
+      "reviewCount": 119,
+      "description": "The Art of Electronics by Paul Horowitz is a widely used electronics resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-4",
+      "shelf": "Floor 1, Shelf D-37",
+      "borrowCount": 46,
+      "addedAt": "2026-09-03T14:44:56.613Z",
+      "tags": [
+        "handbook"
+      ]
+    },
+    {
+      "id": "b29",
+      "title": "Digital Design",
+      "authors": [
+        "M. Morris Mano"
+      ],
+      "category": "Electronics",
+      "subjects": [
+        "Electronics",
+        "Reference"
+      ],
+      "publisher": "Pearson",
+      "edition": "1st Edition",
+      "year": 2017,
+      "isbn13": "9780000229651",
+      "isbn10": "0000229651",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.3,
+      "reviewCount": 156,
+      "description": "Digital Design by M. Morris Mano is a widely used electronics resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-5",
+      "shelf": "Floor 2, Shelf E-38",
+      "borrowCount": 99,
+      "addedAt": "2026-08-23T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    },
+    {
+      "id": "b30",
+      "title": "Principles of Management",
+      "authors": [
+        "Harold Koontz"
+      ],
+      "category": "Business and Management",
+      "subjects": [
+        "Business and Management",
+        "Undergraduate"
+      ],
+      "publisher": "McGraw Hill",
+      "edition": "2nd Edition",
+      "year": 2015,
+      "isbn13": "9780000237570",
+      "isbn10": "0000237570",
+      "language": "English",
+      "format": "physical",
+      "rating": 4,
+      "reviewCount": 193,
+      "description": "Principles of Management by Harold Koontz is a widely used business and management resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-6",
+      "shelf": "Floor 3, Shelf F-39",
+      "borrowCount": 152,
+      "addedAt": "2026-08-12T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b31",
+      "title": "Zero to One",
+      "authors": [
+        "Peter Thiel"
+      ],
+      "category": "Business and Management",
+      "subjects": [
+        "Business and Management",
+        "Reference"
+      ],
+      "publisher": "Crown",
+      "edition": "3rd Edition",
+      "year": 2014,
+      "isbn13": "9780000245489",
+      "isbn10": "0000245489",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.3,
+      "reviewCount": 50,
+      "description": "Zero to One by Peter Thiel is a widely used business and management resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-1",
+      "shelf": "Floor 1, Shelf A-40",
+      "borrowCount": 65,
+      "addedAt": "2026-08-01T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b32",
+      "title": "Atomic Habits",
+      "authors": [
+        "James Clear"
+      ],
+      "category": "Humanities",
+      "subjects": [
+        "Humanities",
+        "Undergraduate"
+      ],
+      "publisher": "Avery",
+      "edition": "4th Edition",
+      "year": 2018,
+      "isbn13": "9780000253408",
+      "isbn10": "0000253408",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.6,
+      "reviewCount": 87,
+      "description": "Atomic Habits by James Clear is a widely used humanities resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-2",
+      "shelf": "Floor 2, Shelf B-41",
+      "borrowCount": 118,
+      "addedAt": "2026-07-21T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b33",
+      "title": "Sapiens",
+      "authors": [
+        "Yuval Noah Harari"
+      ],
+      "category": "Humanities",
+      "subjects": [
+        "Humanities",
+        "Reference"
+      ],
+      "publisher": "Harper",
+      "edition": "1st Edition",
+      "year": 2015,
+      "isbn13": "9780000261327",
+      "isbn10": "0000261327",
+      "language": "English",
+      "format": "physical",
+      "rating": 4.5,
+      "reviewCount": 124,
+      "description": "Sapiens by Yuval Noah Harari is a widely used humanities resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-3",
+      "shelf": "Floor 3, Shelf C-42",
+      "borrowCount": 31,
+      "addedAt": "2026-07-10T14:44:56.613Z",
+      "tags": []
+    },
+    {
+      "id": "b34",
+      "title": "Professional Ethics and Human Values",
+      "authors": [
+        "R. S. Naagarazan"
+      ],
+      "category": "Humanities",
+      "subjects": [
+        "Humanities",
+        "Undergraduate"
+      ],
+      "publisher": "New Age",
+      "edition": "2nd Edition",
+      "year": 2006,
+      "isbn13": "9780000269246",
+      "isbn10": "0000269246",
+      "language": "English",
+      "format": "reference",
+      "rating": 4,
+      "reviewCount": 161,
+      "description": "Professional Ethics and Human Values by R. S. Naagarazan is a widely used humanities resource in university curricula. It builds strong fundamentals with worked examples, end-of-chapter exercises and real-world case studies, making it suitable for both coursework and self-study. Students preparing for semester exams and competitive tests will find the structured progression especially helpful.",
+      "topics": [
+        "Foundations",
+        "Core concepts",
+        "Worked examples",
+        "Applications",
+        "Exercises & review"
+      ],
+      "coverColor": "cover-4",
+      "shelf": "Floor 1, Shelf D-43",
+      "borrowCount": 84,
+      "addedAt": "2026-10-27T14:44:56.613Z",
+      "tags": [
+        "textbook"
+      ]
+    }
+  ],
+  "copies": [
+    {
+      "id": "b1-c1",
+      "bookId": "b1",
+      "barcode": "UL1000",
+      "shelf": "Floor 1, Shelf A-10",
+      "status": "available"
+    },
+    {
+      "id": "b1-c2",
+      "bookId": "b1",
+      "barcode": "UL1001",
+      "shelf": "Floor 1, Shelf A-10",
+      "status": "maintenance"
+    },
+    {
+      "id": "b2-c1",
+      "bookId": "b2",
+      "barcode": "UL1010",
+      "shelf": "Floor 2, Shelf B-11",
+      "status": "available"
+    },
+    {
+      "id": "b2-c2",
+      "bookId": "b2",
+      "barcode": "UL1011",
+      "shelf": "Floor 2, Shelf B-11",
+      "status": "available"
+    },
+    {
+      "id": "b2-c3",
+      "bookId": "b2",
+      "barcode": "UL1012",
+      "shelf": "Floor 2, Shelf B-11",
+      "status": "available"
+    },
+    {
+      "id": "b3-c1",
+      "bookId": "b3",
+      "barcode": "UL1020",
+      "shelf": "Floor 3, Shelf C-12",
+      "status": "available"
+    },
+    {
+      "id": "b3-c2",
+      "bookId": "b3",
+      "barcode": "UL1021",
+      "shelf": "Floor 3, Shelf C-12",
+      "status": "available"
+    },
+    {
+      "id": "b3-c3",
+      "bookId": "b3",
+      "barcode": "UL1022",
+      "shelf": "Floor 3, Shelf C-12",
+      "status": "available"
+    },
+    {
+      "id": "b3-c4",
+      "bookId": "b3",
+      "barcode": "UL1023",
+      "shelf": "Floor 3, Shelf C-12",
+      "status": "available"
+    },
+    {
+      "id": "b4-c1",
+      "bookId": "b4",
+      "barcode": "UL1030",
+      "shelf": "Floor 1, Shelf D-13",
+      "status": "available"
+    },
+    {
+      "id": "b4-c2",
+      "bookId": "b4",
+      "barcode": "UL1031",
+      "shelf": "Floor 1, Shelf D-13",
+      "status": "available"
+    },
+    {
+      "id": "b4-c3",
+      "bookId": "b4",
+      "barcode": "UL1032",
+      "shelf": "Floor 1, Shelf D-13",
+      "status": "available"
+    },
+    {
+      "id": "b4-c4",
+      "bookId": "b4",
+      "barcode": "UL1033",
+      "shelf": "Floor 1, Shelf D-13",
+      "status": "available"
+    },
+    {
+      "id": "b4-c5",
+      "bookId": "b4",
+      "barcode": "UL1034",
+      "shelf": "Floor 1, Shelf D-13",
+      "status": "available"
+    },
+    {
+      "id": "b5-c1",
+      "bookId": "b5",
+      "barcode": "UL1040",
+      "shelf": "Floor 2, Shelf E-14",
+      "status": "available"
+    },
+    {
+      "id": "b5-c2",
+      "bookId": "b5",
+      "barcode": "UL1041",
+      "shelf": "Floor 2, Shelf E-14",
+      "status": "available"
+    },
+    {
+      "id": "b7-c1",
+      "bookId": "b7",
+      "barcode": "UL1060",
+      "shelf": "Floor 1, Shelf A-16",
+      "status": "available"
+    },
+    {
+      "id": "b7-c2",
+      "bookId": "b7",
+      "barcode": "UL1061",
+      "shelf": "Floor 1, Shelf A-16",
+      "status": "available"
+    },
+    {
+      "id": "b7-c3",
+      "bookId": "b7",
+      "barcode": "UL1062",
+      "shelf": "Floor 1, Shelf A-16",
+      "status": "available"
+    },
+    {
+      "id": "b7-c4",
+      "bookId": "b7",
+      "barcode": "UL1063",
+      "shelf": "Floor 1, Shelf A-16",
+      "status": "available"
+    },
+    {
+      "id": "b8-c1",
+      "bookId": "b8",
+      "barcode": "UL1070",
+      "shelf": "Floor 2, Shelf B-17",
+      "status": "reference"
+    },
+    {
+      "id": "b8-c2",
+      "bookId": "b8",
+      "barcode": "UL1071",
+      "shelf": "Floor 2, Shelf B-17",
+      "status": "reference"
+    },
+    {
+      "id": "b8-c3",
+      "bookId": "b8",
+      "barcode": "UL1072",
+      "shelf": "Floor 2, Shelf B-17",
+      "status": "reference"
+    },
+    {
+      "id": "b8-c4",
+      "bookId": "b8",
+      "barcode": "UL1073",
+      "shelf": "Floor 2, Shelf B-17",
+      "status": "reference"
+    },
+    {
+      "id": "b8-c5",
+      "bookId": "b8",
+      "barcode": "UL1074",
+      "shelf": "Floor 2, Shelf B-17",
+      "status": "reference"
+    },
+    {
+      "id": "b9-c1",
+      "bookId": "b9",
+      "barcode": "UL1080",
+      "shelf": "Floor 3, Shelf C-18",
+      "status": "available"
+    },
+    {
+      "id": "b9-c2",
+      "bookId": "b9",
+      "barcode": "UL1081",
+      "shelf": "Floor 3, Shelf C-18",
+      "status": "available"
+    },
+    {
+      "id": "b10-c1",
+      "bookId": "b10",
+      "barcode": "UL1090",
+      "shelf": "Floor 1, Shelf D-19",
+      "status": "available"
+    },
+    {
+      "id": "b10-c2",
+      "bookId": "b10",
+      "barcode": "UL1091",
+      "shelf": "Floor 1, Shelf D-19",
+      "status": "available"
+    },
+    {
+      "id": "b10-c3",
+      "bookId": "b10",
+      "barcode": "UL1092",
+      "shelf": "Floor 1, Shelf D-19",
+      "status": "available"
+    },
+    {
+      "id": "b11-c1",
+      "bookId": "b11",
+      "barcode": "UL1100",
+      "shelf": "Floor 2, Shelf E-20",
+      "status": "available"
+    },
+    {
+      "id": "b11-c2",
+      "bookId": "b11",
+      "barcode": "UL1101",
+      "shelf": "Floor 2, Shelf E-20",
+      "status": "available"
+    },
+    {
+      "id": "b11-c3",
+      "bookId": "b11",
+      "barcode": "UL1102",
+      "shelf": "Floor 2, Shelf E-20",
+      "status": "available"
+    },
+    {
+      "id": "b11-c4",
+      "bookId": "b11",
+      "barcode": "UL1103",
+      "shelf": "Floor 2, Shelf E-20",
+      "status": "available"
+    },
+    {
+      "id": "b12-c1",
+      "bookId": "b12",
+      "barcode": "UL1110",
+      "shelf": "Floor 3, Shelf F-21",
+      "status": "available"
+    },
+    {
+      "id": "b12-c2",
+      "bookId": "b12",
+      "barcode": "UL1111",
+      "shelf": "Floor 3, Shelf F-21",
+      "status": "available"
+    },
+    {
+      "id": "b12-c3",
+      "bookId": "b12",
+      "barcode": "UL1112",
+      "shelf": "Floor 3, Shelf F-21",
+      "status": "available"
+    },
+    {
+      "id": "b12-c4",
+      "bookId": "b12",
+      "barcode": "UL1113",
+      "shelf": "Floor 3, Shelf F-21",
+      "status": "available"
+    },
+    {
+      "id": "b12-c5",
+      "bookId": "b12",
+      "barcode": "UL1114",
+      "shelf": "Floor 3, Shelf F-21",
+      "status": "available"
+    },
+    {
+      "id": "b13-c1",
+      "bookId": "b13",
+      "barcode": "UL1120",
+      "shelf": "Floor 1, Shelf A-22",
+      "status": "available"
+    },
+    {
+      "id": "b13-c2",
+      "bookId": "b13",
+      "barcode": "UL1121",
+      "shelf": "Floor 1, Shelf A-22",
+      "status": "available"
+    },
+    {
+      "id": "b14-c1",
+      "bookId": "b14",
+      "barcode": "UL1130",
+      "shelf": "Floor 2, Shelf B-23",
+      "status": "available"
+    },
+    {
+      "id": "b14-c2",
+      "bookId": "b14",
+      "barcode": "UL1131",
+      "shelf": "Floor 2, Shelf B-23",
+      "status": "available"
+    },
+    {
+      "id": "b14-c3",
+      "bookId": "b14",
+      "barcode": "UL1132",
+      "shelf": "Floor 2, Shelf B-23",
+      "status": "available"
+    },
+    {
+      "id": "b15-c1",
+      "bookId": "b15",
+      "barcode": "UL1140",
+      "shelf": "Floor 3, Shelf C-24",
+      "status": "available"
+    },
+    {
+      "id": "b15-c2",
+      "bookId": "b15",
+      "barcode": "UL1141",
+      "shelf": "Floor 3, Shelf C-24",
+      "status": "available"
+    },
+    {
+      "id": "b15-c3",
+      "bookId": "b15",
+      "barcode": "UL1142",
+      "shelf": "Floor 3, Shelf C-24",
+      "status": "available"
+    },
+    {
+      "id": "b15-c4",
+      "bookId": "b15",
+      "barcode": "UL1143",
+      "shelf": "Floor 3, Shelf C-24",
+      "status": "maintenance"
+    },
+    {
+      "id": "b16-c1",
+      "bookId": "b16",
+      "barcode": "UL1150",
+      "shelf": "Floor 1, Shelf D-25",
+      "status": "available"
+    },
+    {
+      "id": "b16-c2",
+      "bookId": "b16",
+      "barcode": "UL1151",
+      "shelf": "Floor 1, Shelf D-25",
+      "status": "available"
+    },
+    {
+      "id": "b16-c3",
+      "bookId": "b16",
+      "barcode": "UL1152",
+      "shelf": "Floor 1, Shelf D-25",
+      "status": "available"
+    },
+    {
+      "id": "b16-c4",
+      "bookId": "b16",
+      "barcode": "UL1153",
+      "shelf": "Floor 1, Shelf D-25",
+      "status": "available"
+    },
+    {
+      "id": "b16-c5",
+      "bookId": "b16",
+      "barcode": "UL1154",
+      "shelf": "Floor 1, Shelf D-25",
+      "status": "available"
+    },
+    {
+      "id": "b18-c1",
+      "bookId": "b18",
+      "barcode": "UL1170",
+      "shelf": "Floor 3, Shelf F-27",
+      "status": "available"
+    },
+    {
+      "id": "b18-c2",
+      "bookId": "b18",
+      "barcode": "UL1171",
+      "shelf": "Floor 3, Shelf F-27",
+      "status": "available"
+    },
+    {
+      "id": "b18-c3",
+      "bookId": "b18",
+      "barcode": "UL1172",
+      "shelf": "Floor 3, Shelf F-27",
+      "status": "available"
+    },
+    {
+      "id": "b19-c1",
+      "bookId": "b19",
+      "barcode": "UL1180",
+      "shelf": "Floor 1, Shelf A-28",
+      "status": "available"
+    },
+    {
+      "id": "b19-c2",
+      "bookId": "b19",
+      "barcode": "UL1181",
+      "shelf": "Floor 1, Shelf A-28",
+      "status": "available"
+    },
+    {
+      "id": "b19-c3",
+      "bookId": "b19",
+      "barcode": "UL1182",
+      "shelf": "Floor 1, Shelf A-28",
+      "status": "available"
+    },
+    {
+      "id": "b19-c4",
+      "bookId": "b19",
+      "barcode": "UL1183",
+      "shelf": "Floor 1, Shelf A-28",
+      "status": "available"
+    },
+    {
+      "id": "b20-c1",
+      "bookId": "b20",
+      "barcode": "UL1190",
+      "shelf": "Floor 2, Shelf B-29",
+      "status": "available"
+    },
+    {
+      "id": "b20-c2",
+      "bookId": "b20",
+      "barcode": "UL1191",
+      "shelf": "Floor 2, Shelf B-29",
+      "status": "available"
+    },
+    {
+      "id": "b20-c3",
+      "bookId": "b20",
+      "barcode": "UL1192",
+      "shelf": "Floor 2, Shelf B-29",
+      "status": "available"
+    },
+    {
+      "id": "b20-c4",
+      "bookId": "b20",
+      "barcode": "UL1193",
+      "shelf": "Floor 2, Shelf B-29",
+      "status": "available"
+    },
+    {
+      "id": "b20-c5",
+      "bookId": "b20",
+      "barcode": "UL1194",
+      "shelf": "Floor 2, Shelf B-29",
+      "status": "available"
+    },
+    {
+      "id": "b21-c1",
+      "bookId": "b21",
+      "barcode": "UL1200",
+      "shelf": "Floor 3, Shelf C-30",
+      "status": "reference"
+    },
+    {
+      "id": "b21-c2",
+      "bookId": "b21",
+      "barcode": "UL1201",
+      "shelf": "Floor 3, Shelf C-30",
+      "status": "reference"
+    },
+    {
+      "id": "b22-c1",
+      "bookId": "b22",
+      "barcode": "UL1210",
+      "shelf": "Floor 1, Shelf D-31",
+      "status": "available"
+    },
+    {
+      "id": "b22-c2",
+      "bookId": "b22",
+      "barcode": "UL1211",
+      "shelf": "Floor 1, Shelf D-31",
+      "status": "available"
+    },
+    {
+      "id": "b22-c3",
+      "bookId": "b22",
+      "barcode": "UL1212",
+      "shelf": "Floor 1, Shelf D-31",
+      "status": "maintenance"
+    },
+    {
+      "id": "b23-c1",
+      "bookId": "b23",
+      "barcode": "UL1220",
+      "shelf": "Floor 2, Shelf E-32",
+      "status": "available"
+    },
+    {
+      "id": "b23-c2",
+      "bookId": "b23",
+      "barcode": "UL1221",
+      "shelf": "Floor 2, Shelf E-32",
+      "status": "available"
+    },
+    {
+      "id": "b23-c3",
+      "bookId": "b23",
+      "barcode": "UL1222",
+      "shelf": "Floor 2, Shelf E-32",
+      "status": "available"
+    },
+    {
+      "id": "b23-c4",
+      "bookId": "b23",
+      "barcode": "UL1223",
+      "shelf": "Floor 2, Shelf E-32",
+      "status": "available"
+    },
+    {
+      "id": "b24-c1",
+      "bookId": "b24",
+      "barcode": "UL1230",
+      "shelf": "Floor 3, Shelf F-33",
+      "status": "available"
+    },
+    {
+      "id": "b24-c2",
+      "bookId": "b24",
+      "barcode": "UL1231",
+      "shelf": "Floor 3, Shelf F-33",
+      "status": "available"
+    },
+    {
+      "id": "b24-c3",
+      "bookId": "b24",
+      "barcode": "UL1232",
+      "shelf": "Floor 3, Shelf F-33",
+      "status": "available"
+    },
+    {
+      "id": "b24-c4",
+      "bookId": "b24",
+      "barcode": "UL1233",
+      "shelf": "Floor 3, Shelf F-33",
+      "status": "available"
+    },
+    {
+      "id": "b24-c5",
+      "bookId": "b24",
+      "barcode": "UL1234",
+      "shelf": "Floor 3, Shelf F-33",
+      "status": "available"
+    },
+    {
+      "id": "b25-c1",
+      "bookId": "b25",
+      "barcode": "UL1240",
+      "shelf": "Floor 1, Shelf A-34",
+      "status": "available"
+    },
+    {
+      "id": "b25-c2",
+      "bookId": "b25",
+      "barcode": "UL1241",
+      "shelf": "Floor 1, Shelf A-34",
+      "status": "available"
+    },
+    {
+      "id": "b26-c1",
+      "bookId": "b26",
+      "barcode": "UL1250",
+      "shelf": "Floor 2, Shelf B-35",
+      "status": "available"
+    },
+    {
+      "id": "b26-c2",
+      "bookId": "b26",
+      "barcode": "UL1251",
+      "shelf": "Floor 2, Shelf B-35",
+      "status": "available"
+    },
+    {
+      "id": "b26-c3",
+      "bookId": "b26",
+      "barcode": "UL1252",
+      "shelf": "Floor 2, Shelf B-35",
+      "status": "available"
+    },
+    {
+      "id": "b27-c1",
+      "bookId": "b27",
+      "barcode": "UL1260",
+      "shelf": "Floor 3, Shelf C-36",
+      "status": "available"
+    },
+    {
+      "id": "b27-c2",
+      "bookId": "b27",
+      "barcode": "UL1261",
+      "shelf": "Floor 3, Shelf C-36",
+      "status": "available"
+    },
+    {
+      "id": "b27-c3",
+      "bookId": "b27",
+      "barcode": "UL1262",
+      "shelf": "Floor 3, Shelf C-36",
+      "status": "available"
+    },
+    {
+      "id": "b27-c4",
+      "bookId": "b27",
+      "barcode": "UL1263",
+      "shelf": "Floor 3, Shelf C-36",
+      "status": "available"
+    },
+    {
+      "id": "b29-c1",
+      "bookId": "b29",
+      "barcode": "UL1280",
+      "shelf": "Floor 2, Shelf E-38",
+      "status": "available"
+    },
+    {
+      "id": "b29-c2",
+      "bookId": "b29",
+      "barcode": "UL1281",
+      "shelf": "Floor 2, Shelf E-38",
+      "status": "maintenance"
+    },
+    {
+      "id": "b30-c1",
+      "bookId": "b30",
+      "barcode": "UL1290",
+      "shelf": "Floor 3, Shelf F-39",
+      "status": "available"
+    },
+    {
+      "id": "b30-c2",
+      "bookId": "b30",
+      "barcode": "UL1291",
+      "shelf": "Floor 3, Shelf F-39",
+      "status": "available"
+    },
+    {
+      "id": "b30-c3",
+      "bookId": "b30",
+      "barcode": "UL1292",
+      "shelf": "Floor 3, Shelf F-39",
+      "status": "available"
+    },
+    {
+      "id": "b31-c1",
+      "bookId": "b31",
+      "barcode": "UL1300",
+      "shelf": "Floor 1, Shelf A-40",
+      "status": "available"
+    },
+    {
+      "id": "b31-c2",
+      "bookId": "b31",
+      "barcode": "UL1301",
+      "shelf": "Floor 1, Shelf A-40",
+      "status": "available"
+    },
+    {
+      "id": "b31-c3",
+      "bookId": "b31",
+      "barcode": "UL1302",
+      "shelf": "Floor 1, Shelf A-40",
+      "status": "available"
+    },
+    {
+      "id": "b31-c4",
+      "bookId": "b31",
+      "barcode": "UL1303",
+      "shelf": "Floor 1, Shelf A-40",
+      "status": "available"
+    },
+    {
+      "id": "b32-c1",
+      "bookId": "b32",
+      "barcode": "UL1310",
+      "shelf": "Floor 2, Shelf B-41",
+      "status": "available"
+    },
+    {
+      "id": "b32-c2",
+      "bookId": "b32",
+      "barcode": "UL1311",
+      "shelf": "Floor 2, Shelf B-41",
+      "status": "available"
+    },
+    {
+      "id": "b32-c3",
+      "bookId": "b32",
+      "barcode": "UL1312",
+      "shelf": "Floor 2, Shelf B-41",
+      "status": "available"
+    },
+    {
+      "id": "b32-c4",
+      "bookId": "b32",
+      "barcode": "UL1313",
+      "shelf": "Floor 2, Shelf B-41",
+      "status": "available"
+    },
+    {
+      "id": "b32-c5",
+      "bookId": "b32",
+      "barcode": "UL1314",
+      "shelf": "Floor 2, Shelf B-41",
+      "status": "available"
+    },
+    {
+      "id": "b33-c1",
+      "bookId": "b33",
+      "barcode": "UL1320",
+      "shelf": "Floor 3, Shelf C-42",
+      "status": "available"
+    },
+    {
+      "id": "b33-c2",
+      "bookId": "b33",
+      "barcode": "UL1321",
+      "shelf": "Floor 3, Shelf C-42",
+      "status": "available"
+    },
+    {
+      "id": "b34-c1",
+      "bookId": "b34",
+      "barcode": "UL1330",
+      "shelf": "Floor 1, Shelf D-43",
+      "status": "reference"
+    },
+    {
+      "id": "b34-c2",
+      "bookId": "b34",
+      "barcode": "UL1331",
+      "shelf": "Floor 1, Shelf D-43",
+      "status": "reference"
+    },
+    {
+      "id": "b34-c3",
+      "bookId": "b34",
+      "barcode": "UL1332",
+      "shelf": "Floor 1, Shelf D-43",
+      "status": "reference"
+    }
+  ],
+  "resources": [
+    {
+      "id": "res1",
+      "title": "DBMS Unit 1–5 Lecture Notes",
+      "kind": "Lecture Notes",
+      "course": "CS301",
+      "approved": true,
+      "submittedBy": "u-faculty"
+    },
+    {
+      "id": "res2",
+      "title": "Operating Systems End-Sem 2025",
+      "kind": "Past Paper",
+      "course": "CS302",
+      "approved": true,
+      "submittedBy": "u-faculty"
+    },
+    {
+      "id": "res3",
+      "title": "B.Tech CSE 3rd Year Syllabus",
+      "kind": "Syllabus",
+      "course": "CSE",
+      "approved": true,
+      "submittedBy": "u-admin"
+    },
+    {
+      "id": "res4",
+      "title": "Computer Networks Mid-Sem 2025",
+      "kind": "Past Paper",
+      "course": "CS303",
+      "approved": true,
+      "submittedBy": "u-faculty"
+    },
+    {
+      "id": "res5",
+      "title": "Machine Learning Lab Manual",
+      "kind": "Lecture Notes",
+      "course": "CS351",
+      "approved": false,
+      "submittedBy": "u-faculty"
+    }
+  ],
+  "settings": {
+    "loanDays": 14,
+    "finePerDay": 5,
+    "maxLoans": 4,
+    "maxRenewals": 2,
+    "fineBlockThreshold": 100,
+    "reservationHoldDays": 3
+  }
+}
