@@ -1,8 +1,10 @@
 import { getFirebaseApp } from '@/lib/firebase';
 import type { LibraryState, User } from './types';
 
-// Saving runs inside this same website (/api/commands), so one Vercel deployment serves everything.
-export const apiConfigured = true;
+/** Thrown when the live command service reports it is not configured; the store falls back to local mode. */
+export class NotConfiguredError extends Error {}
+
+// Saving runs inside this same website (/api/commands), so one deployment serves everything.
 export async function libraryCommand(command: string, args: unknown[]) {
   const app = getFirebaseApp();
   if (!app) throw new Error('Firebase is not configured');
@@ -14,7 +16,10 @@ export async function libraryCommand(command: string, args: unknown[]) {
     body: JSON.stringify({ command, args }),
   });
   const result = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(typeof result.detail === 'string' ? result.detail : 'Unable to save this change');
+  if (!response.ok) {
+    if (response.status === 503 && typeof result.detail === 'string' && result.detail.includes('not configured')) throw new NotConfiguredError(result.detail);
+    throw new Error(typeof result.detail === 'string' ? result.detail : 'Unable to save this change');
+  }
   return result.result;
 }
 
