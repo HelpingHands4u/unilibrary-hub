@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { StatCard, fmtDate } from "@/components/lib/bits";
 import { actions, useLibrary } from "@/lib/library/store";
 import { daysOverdue } from "@/lib/library/rules";
-import { firebaseConfigured } from "@/lib/firebase";
+import { useLibraryMode } from "@/lib/library/mode";
 import type { Role } from "@/lib/library/types";
 
 export const Route = createFileRoute("/admin")({
@@ -26,6 +26,7 @@ export const Route = createFileRoute("/admin")({
 
 function Admin() {
   const { state, user } = useLibrary();
+  const live = useLibraryMode() === "live";
   if (user?.role !== "admin") return <p className="py-16 text-center font-semibold">Administrator access only.</p>;
   const now = new Date();
   const run = async (fn: () => unknown) => { try { await fn(); toast.success("Saved"); } catch (e) { toast.error((e as Error).message); } };
@@ -70,7 +71,7 @@ function Admin() {
         </div>
       </section>
       <section className="rounded-xl border bg-card p-4 shadow-card">
-        <div className="flex items-center justify-between"><h2 className="font-bold">Audit log</h2><Button disabled={firebaseConfigured} size="sm" variant="ghost" onClick={() => { actions.resetDemo(); toast.success("Demo data reset"); }}>Reset demo data</Button></div>
+        <div className="flex items-center justify-between"><h2 className="font-bold">Audit log</h2><Button disabled={live} size="sm" variant="ghost" onClick={() => { actions.resetDemo(); toast.success("Demo data reset"); }}>Reset demo data</Button></div>
         <div className="mt-2 max-h-72 overflow-y-auto text-xs">
           {state.audit.slice(0, 50).map((a) => <p key={a.id} className="border-b py-1.5"><span className="text-muted-foreground">{fmtDate(a.timestamp)}</span> · <b>{a.action}</b> · {a.detail}</p>)}
         </div>

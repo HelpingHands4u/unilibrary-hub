@@ -49,6 +49,7 @@ const DEMO = [
 
 function Login() {
   const { mode, portal } = Route.useSearch();
+  const libraryMode = useLibraryMode();
   const P = PORTALS[portal];
   const navigate = useNavigate();
   const [tab, setTab] = useState(mode === "register" ? "register" : "signin");
@@ -69,7 +70,8 @@ function Login() {
     if (!parsed.success) { toast.error(parsed.error.issues[0]?.message ?? "Check the form"); return; }
     setBusy(true);
     try {
-      if (firebaseConfigured) {
+      await probeLibraryMode();
+      if (isLive()) {
         const r = await firebaseSignIn(f.email, f.password, registering ? { name: f.name.trim(), rollNumber: f.roll.trim().toUpperCase(), department: f.dept.trim() } : undefined);
         actions.signInExternal(r.uid, r.email, r.name, r.role);
         done(r.role);
@@ -98,7 +100,7 @@ function Login() {
         </div>
         <h1 className="text-2xl font-extrabold">{P.title}</h1>
         <p className="mt-2 text-sm opacity-80">{P.text}</p>
-        {!firebaseConfigured && (
+        {libraryMode !== "live" && (
           <div className="mt-6 rounded-xl bg-sidebar-accent p-4">
             <p className="text-sm font-bold">Demo mode</p>
             <p className="mt-1 text-xs opacity-80">Firebase isn't configured yet, so data is saved in this browser. Try a demo account (any password):</p>
