@@ -42,7 +42,7 @@ async function admin(): Promise<{ auth: any; db: any }> {
   const credentials = serviceAccountCredentials();
   if (!credentials) throw new Error('Firebase Admin credentials are not configured');
   const { getApps, initializeApp, cert } = await importAdmin('firebase-admin/app');
-  if (!getApps().length) initializeApp({ credential: cert(credentials), projectId: credentials.project_id ?? credentials.projectId });
+  if (!getApps().length) initializeApp({ credential: cert(credentials), projectId: credentials['project_id'] ?? credentials['projectId'] });
   const { getAuth } = await importAdmin('firebase-admin/auth');
   const { getFirestore } = await importAdmin('firebase-admin/firestore');
   services = { auth: getAuth(), db: getFirestore() };
@@ -74,7 +74,8 @@ export const Route = createFileRoute('/api/commands')({
         try { uid = (await auth.verifyIdToken(token ?? '', true)).uid; } catch { return json({ detail: 'Please sign in again' }, 401); }
         const { apply, COLLECTIONS, DEFAULTS, PermissionError, ValidationError } = await import('@/lib/library/domain.server');
         try {
-          const result = await db.runTransaction(async tx => {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const result = await db.runTransaction(async (tx: any) => {
             // A shared revision document serializes mutations; retries re-evaluate eligibility.
             const revision = db.collection('system').doc('revision');
             const settingsDoc = db.collection('settings').doc('library');
@@ -82,7 +83,7 @@ export const Route = createFileRoute('/api/commands')({
             const role = roleSnap.data()?.['role'] ?? 'student';
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const state: any = {};
-            for (const [key, path] of Object.entries(COLLECTIONS)) state[key] = (await tx.get(db.collection(path))).docs.map((d: { id: string; data: () => unknown }) => ({ ...d.data(), id: d.id }));
+            for (const [key, path] of Object.entries(COLLECTIONS)) state[key] = (await tx.get(db.collection(path))).docs.map((d: { id: string; data: () => Record<string, unknown> }) => ({ ...d.data(), id: d.id }));
             state.settings = { ...DEFAULTS, ...(settingsSnap.data() ?? {}) };
             const before = structuredClone(state);
             const out = apply(state, uid, role, command, args);
