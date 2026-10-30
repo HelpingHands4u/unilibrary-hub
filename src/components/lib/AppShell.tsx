@@ -6,8 +6,7 @@ import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { actions, hydrateStore, useLibrary } from "@/lib/library/store";
-import { firebaseConfigured } from "@/lib/firebase";
-import { apiConfigured } from "@/lib/library/remote";
+import { useLibraryMode } from "@/lib/library/mode";
 import { fmtDate } from "./bits";
 
 function useNav() {
@@ -212,6 +211,7 @@ function UserMenu() {
 export function AppShell({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
   const { state } = useLibrary();
+  const libraryMode = useLibraryMode();
   useEffect(() => hydrateStore(), []);
   return (
     <div className="flex min-h-screen w-full overflow-x-hidden">
@@ -255,7 +255,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             ))}
           </div>
         </header>
-        <div role="status" className="border-b bg-secondary px-4 py-1.5 text-xs text-secondary-foreground">{!firebaseConfigured ? "Demonstration · changes saved in this browser only" : apiConfigured ? "Firebase connected" : "Firebase connected · library saving service not configured"}</div>
+        <div role="status" className="border-b bg-secondary px-4 py-1.5 text-xs text-secondary-foreground">{libraryMode === "live" ? "Firebase connected · changes saved to the library server" : libraryMode === "unknown" ? "" : "Demonstration · changes saved in this browser only"}</div>
         <main className="min-w-0 flex-1 px-3 py-5 sm:px-6">{children}</main>
         <Footer />
       </div>

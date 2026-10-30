@@ -8,7 +8,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { actions } from "@/lib/library/store";
-import { firebaseConfigured, firebaseSignIn } from "@/lib/firebase";
+import { firebaseSignIn } from "@/lib/firebase";
+import { isLive, probeLibraryMode, useLibraryMode } from "@/lib/library/mode";
 
 export const Route = createFileRoute("/login")({
   validateSearch: zodValidator(z.object({ mode: fallback(z.string(), "signin").default("signin"), portal: fallback(z.enum(["student", "librarian", "admin", "faculty"]), "student").default("student") })),

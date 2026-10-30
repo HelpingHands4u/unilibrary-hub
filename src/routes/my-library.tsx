@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BookCard, BookCover, StatCard, StatusBadge, fmtDate } from "@/components/lib/bits";
 import { actions, useLibrary } from "@/lib/library/store";
-import { firebaseConfigured } from "@/lib/firebase";
+import { useLibraryMode } from "@/lib/library/mode";
 import { ProfileForm } from "@/components/lib/ProfileForm";
 import { canRenew, dueBadge, outstandingFines } from "@/lib/library/rules";
 
@@ -33,6 +33,7 @@ const run = async (fn: () => unknown, ok: string) => {
 function MyLibrary() {
   const { tab } = Route.useSearch();
   const { state, user } = useLibrary();
+  const live = useLibraryMode() === "live";
   if (!user) return <div className="py-16 text-center"><p className="font-semibold">Please sign in to see your library.</p><Button asChild className="mt-3"><Link to="/login">Sign in</Link></Button></div>;
   const now = new Date();
   const book = (id: string) => state.books.find((b) => b.id === id);
@@ -90,7 +91,7 @@ function MyLibrary() {
           {fines.map((f) => { const l = state.loans.find((x) => x.id === f.loanId); return (
             <div key={f.id} className="flex flex-wrap items-center justify-between gap-2 rounded-lg border bg-card p-3 text-sm">
               <div><p className="font-semibold">{l ? book(l.bookId)?.title ?? "Book" : "Loan"}</p><p className="text-xs text-muted-foreground">{f.daysOverdue} days × ₹{f.rate} = ₹{f.amount}</p></div>
-              {f.status === "unpaid" && firebaseConfigured ? <StatusBadge tone="warning">Pay at cashier</StatusBadge> : f.status === "unpaid" ? <Button size="sm" className="bg-accent text-accent-foreground" onClick={() => run(() => actions.payFine(f.id), "Payment recorded (demo)")}>Pay (demo)</Button> : <StatusBadge tone="success">{f.status}</StatusBadge>}
+              {f.status === "unpaid" && live ? <StatusBadge tone="warning">Pay at cashier</StatusBadge> : f.status === "unpaid" ? <Button size="sm" className="bg-accent text-accent-foreground" onClick={() => run(() => actions.payFine(f.id), "Payment recorded (demo)")}>Pay (demo)</Button> : <StatusBadge tone="success">{f.status}</StatusBadge>}
             </div>); })}
           <p className="text-xs text-muted-foreground">Demo payment only — real payments are made at the university cashier counter.</p>
         </TabsContent>
