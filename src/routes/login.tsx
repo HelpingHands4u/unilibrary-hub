@@ -106,7 +106,7 @@ function Login() {
             <p className="mt-1 text-xs opacity-80">Firebase isn't configured yet, so data is saved in this browser. Try a demo account (any password):</p>
             <div className="mt-3 grid grid-cols-2 gap-2">
               {DEMO.map(([r, em]) => (
-                <Button type="button" key={r} onClick={() => done(actions.signInDemo(em).role)} className="rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-accent-foreground">{r}</Button>
+                <Button type="button" key={r} onClick={async () => { await probeLibraryMode(); if (isLive()) { toast.error("Demo accounts are unavailable in live mode"); return; } try { done(actions.signInDemo(em).role); } catch (e) { toast.error((e as Error).message); } }} className="rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-accent-foreground">{r}</Button>
               ))}
             </div>
           </div>
